@@ -21,74 +21,60 @@ namespace CalcAppTest
         public void GetMultiplication_Input4point0and6point0_Returns24point0()
         {
 
-            //Arrange
-            double number1 = 4.0;
-            double number2 = 6.0;
+            [Test]
+        public void GetDivision_Input8point0and4point0_Returns2point0()
+        {
 
-            double expectedResult = number1 * number2;
+            //Arrange
+            double number1 = 8;
+            double number2 = 4;
+
+            double expectedResult = number1 / number2;
 
             Calc testCalc = new Calc(number1, number2);
 
             //Act
-            double actualResult = testCalc.GetMultiplication();
+            double actualResult = testCalc.GetDivision();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
 
         }
         [Test]
-        public void GetMultiplication_Input4point0and6point0_Returns12point0()
+        public void GetDivision_Input24point0and6point0_Returns4point0()
         {
 
             //Arrange
-            double number1 = 2;
+            double number1 = 24;
             double number2 = 6;
 
-            double expectedResult = number1 * number2;
+            double expectedResult = number1 / number2;
 
             Calc testCalc = new Calc(number1, number2);
 
             //Act
-            double actualResult = testCalc.GetMultiplication();
+            double actualResult = testCalc.GetDivision();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
-
         }
         [Test]
-        public void GetMultiplication_Input45point0and45point0_Returns2045point0()
+        public void GetDivision_Input4point0and4point0_Returns1point0()
         {
 
             //Arrange
-            double number1 = 45;
-            double number2 = 45;
+            double number1 = 4;
+            double number2 = 4;
 
-            double expectedResult = number1 * number2;
+            double expectedResult = number1 / number2;
 
             Calc testCalc = new Calc(number1, number2);
 
             //Act
-            double actualResult = testCalc.GetMultiplication();
+            double actualResult = testCalc.GetDivision();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
-
         }
-        public void GetMultiplication_Input5point0and6point0_Returns30point0()
-        {
-
-            //Arrange
-            double number1 = 5;
-            double number2 = 6;
-
-            double expectedResult = number1 * number2;
-
-            Calc testCalc = new Calc(number1, number2);
-
-            //Act
-            double actualResult = testCalc.GetMultiplication();
-
-            //Assert
-            Assert.AreEqual(expectedResult, actualResult);
-
-        }
+    }
+}
