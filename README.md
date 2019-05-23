@@ -14,60 +14,60 @@ namespace CalcAppTest
     [TestFixture]
     class CalcTests
     {
-        [Test]
-        public void GetAddition_Input3point4and5point6_Returns9point0()
+       [Test]
+        public void Getsubtraction_Input9point0and4point0_Returns5point0()
         {
 
             //Arrange
-            double number1 = 3.4;
-            double number2 = 5.6;
+            double number1 = 9;
+            double number2 = 4;
 
-            double expectedResult = number1 + number2;
+            double expectedResult = number1 - number2;
 
             Calc testCalc = new Calc(number1, number2);
 
             //Act
-            double actualResult = testCalc.GetAddition();
+            double actualResult = testCalc.GetSubtraction();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
 
 
         }
+
         [Test]
-        public void GetAddition_Input1point0and6point6Returns5point5()
+        public void Getsubtraction_Input04point10and0point3_Returns5point0()
         {
 
             //Arrange
-            double number1 = 1.0;
-            double number2 = 6.6;
+            double number1 = 15;
+            double number2 = 10.0;
 
-            double expectedResult = number1 + number2;
+            double expectedResult = number1 - number2;
 
             Calc testCalc = new Calc(number1, number2);
 
             //Act
-            double actualResult = testCalc.GetAddition();
+            double actualResult = testCalc.GetSubtraction();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
 
-
         }
         [Test]
-        public void GetAddition_Input0point0and1point5_Returns1point5()
+        public void Getsubtraction_Input10point0and09point0_Returns01point00()
         {
 
             //Arrange
-            double number1 = 0.0;
-            double number2 = 1.5;
+            double number1 = 10;
+            double number2 = 09;
 
-            double expectedResult = number1 + number2;
+            double expectedResult = number1 - number2;
 
             Calc testCalc = new Calc(number1, number2);
 
             //Act
-            double actualResult = testCalc.GetAddition();
+            double actualResult = testCalc.GetSubtraction();
 
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
